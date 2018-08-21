@@ -3,8 +3,8 @@ jobs:
   build:
     working_directory: ~/test-circleci
     docker:
-      - image: circleci/ruby:2.4-node-jessie
-        environment: # environment variables for primary container
+      - image: circleci/2.5.1-stretch-node-browsers
+        environment:
           BUNDLE_JOBS: 3
           BUNDLE_RETRY: 3
           BUNDLE_PATH: vendor/bundle
