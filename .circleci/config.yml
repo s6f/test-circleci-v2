@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/test-circleci
     docker:
-      - image: circleci/2.5.1-stretch-node-browsers
+      - image: circleci/ruby:2.5.1-stretch-node-browsers
         environment:
           BUNDLE_JOBS: 3
           BUNDLE_RETRY: 3
